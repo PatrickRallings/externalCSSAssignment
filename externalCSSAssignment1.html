@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>External CSS Assignment</title>
-</head>
-<body>
-    <div>
-        <div>CFH</div>
-        <div>Menu</div>
-        <div>GitHub</div>
-        <div>Google</div>
-        <div>Contact</div>
-        <div>Add Form Here</div>
-        <div>LOG IN / DIRECTIONS <BR>VIEW CART</div>
+    <style>
+      body {
+        font-family: serif;
+      }
+      .container {
+        display: flex;
+        min-width: 850px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+      }
+      .emblem {
+        background-color: purple;
+        color: white;
+        font-size: 42px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+      .menu {
+        background-color: black;
+        color: white;
+        font-size: smaller;
+        padding: 5px;
+        margin-top: 12px;
+      }
+      .menuRight {
+        background-color: black;
+        color: white;
+        font-size: smaller;
+        padding-right: 20px;
+      }
+      .icon {
+    background: url('your-image-url.jpg');
+    margin-top: 4px;
+    margin-left: 4px;
+    height: 12px;
+    width: 12px;
+    display: block;
+    float:right;
+      }
+      .iconCart {
+    background: url('your-image-url.jpg');
+    margin-right: 30%;
+    margin-top: -3px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    float:right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="emblem">CFH</div>
+      <div class="menu">Menu</div>
+      <div class="menu">GitHub</div>
+      <div class="menu">Google</div>
+      <div class="menu">Contact</div>
+      <div class="menu"><input type="text"></input><img class="icon" src="http://www.clker.com/cliparts/n/U/H/1/H/u/search-icon-white-one-hi.png" alt="Magnifying glass icon"></div>
+      <div class="menuRight">LOG IN / DIRECTIONS
+        <br/>VIEW CART <img class="iconCart" src="https://ak8.picdn.net/shutterstock/videos/1006608868/thumb/7.jpg"></div>
     </div>
-</body>
+  </body>
 </html>
